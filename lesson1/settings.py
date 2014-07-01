@@ -26,6 +26,9 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_DIRS = (
+    '/home/damir/djangoenvstudiyng/bin/lesson1/templates'
+)
 
 # Application definition
 
