@@ -5,5 +5,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'secondapp.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^', 'buyinglist.views.tobuy'),
+    url(r'^show/$', 'buyinglist.views.tobuy'),
+    url(r'^add/$', 'buyinglist.views.additem'),
 )

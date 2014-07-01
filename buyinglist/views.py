@@ -7,10 +7,8 @@ from buyinglist.models import Item
 
 # Create your views here.
 
-# def tobuy(request):
-# 	view = "some text"
-# 	html = "<html><body><h3>%s</h3></html></body>" % view
-# 	return HttpResponse(html)
+def additem(request):
+	return render_to_response('additem.html',{'item': "ogurec"})
 
 def tobuy(request):
 	return render_to_response('tobuy.html',{'items': Item.objects.all()})
