@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Добавить покупку</title>
+		<link rel="stylesheet" type="text/css" href="{% static "static/css/bootstrap.css" %}">
+	</head>
+<body>
+	<form action="/contact/" method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+	<input type="submit" value="Submit" />
+	</form>
+</form>
+</body>
+</html>

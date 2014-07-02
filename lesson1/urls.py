@@ -10,5 +10,6 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^tobuy/', include('buyinglist.urls')),
+    url(r'^contact/', include('buyinglist.urls')),
    
 )

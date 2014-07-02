@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Список покупок</title>
+		<link rel="stylesheet" type="text/css" href="{% static "static/css/bootstrap.css" %}">
+	</head>
+<body>
+<table border="1" width="100%" cellpadding="5">
+{% for item in items %}
+	<tr>
+		<th> {{ item.item_name }}</th>
+		<th> {{ item.item_number }}</th>
+		<th> {{ item.item_unit_measure }}</th>
+	</tr>
+{% endfor %}
+</table>
+</body>
+</html>

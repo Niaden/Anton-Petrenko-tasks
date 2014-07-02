@@ -6,5 +6,6 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^show/$', 'buyinglist.views.tobuy'),
-    url(r'^add/$', 'buyinglist.views.additem'),
+    url(r'^add/', 'buyinglist.views.additem'),
+    url(r'^', 'buyinglist.views.contact'),
 )
